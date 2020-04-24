@@ -3,7 +3,7 @@ import {ConnectionOptions} from "typeorm"
 const ConnectionOptions: ConnectionOptions = {
     database: "nuber",
     type: "postgres",
-    synchronize: true,
+    synchronize: true, // 자동 동기화 migration해줌
     logging: true,
     entities: ["entities/**/*.*"],
     host: process.env.DB_ENDPOINT || "localhost",
